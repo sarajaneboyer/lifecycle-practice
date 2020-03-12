@@ -1,6 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
 
+
+//I think I need to turn this into a function
+// send props in in Animation.js and then send them back
+// with a handleClick method or a componentDidMount??
+
+
+
+
+
+
+
 class MouseInfo extends Component {
   constructor(props) {
     super(props)

@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class Animation extends Component {
   state = {
     xPos: 0,
-    dx: 8,
+    dx: 25,
     yPos: 0,
-    dy: 5,
+    dy: 24,
     mouseX: 0,
     mouseY: 0,
   }
@@ -13,7 +13,7 @@ class Animation extends Component {
   componentDidMount() {
     this.ticker = setInterval(() => {
       this.nextStep()
-    }, 45)
+    }, 500)
   }
 
 
@@ -61,6 +61,9 @@ class Animation extends Component {
       mouseX: e.screenX,
       mouseY: e.screenY,
     })
+    //if mouseX == xPos && mouseY == yPos
+      // // some method that override componentDidMount and
+      // // stops animation. - You won the game! 
   }
 
   render() {
